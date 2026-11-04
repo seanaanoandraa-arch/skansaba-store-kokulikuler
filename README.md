@@ -1,1 +1,0 @@
-# skansaba-store-kokulikuler
