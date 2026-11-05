@@ -366,3 +366,15 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("mainNav")?.classList.toggle("open");
     });
 });
+
+function togglePassword(id, button) {
+    const input = document.getElementById(id);
+
+    if (input.type === "password") {
+        input.type = "text";
+        button.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+    } else {
+        input.type = "password";
+        button.innerHTML = '<i class="fa-solid fa-eye"></i>';
+    }
+}

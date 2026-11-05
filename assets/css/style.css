@@ -1010,5 +1010,29 @@ textarea {
 }
 
 @media (max-width: 680px) {
-    .language-switch { margin-right: 5px; }
+    .language-switch {
+        margin-right: 5px;
+    }
+}
+
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.password-wrapper button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #777;
 }
