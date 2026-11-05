@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Skansaba Store</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="catalog">
+
+    <header class="site-header">
+        <div class="nav-wrap">
+
+            <a class="brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Skansaba Store">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <nav id="mainNav">
+                <a href="index.html">Beranda</a>
+                <a class="active" href="katalog.html">Katalog Produk</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="language-switch" aria-label="Pilih bahasa">
+                    <button type="button" class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+                    <span>|</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+
+                <a class="cart-link" href="keranjang.html">
+                    <img src="assets/images/keranjang.png"
+                         alt="Keranjang" class="cart-icon">
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-main">
+
+        <div class="page-title">
+            <span class="eyebrow">TEMUKAN KEBUTUHANMU</span>
+            <h1>Katalog Produk</h1>
+            <p>Pilih produk kebutuhan yang anda butuhkan.</p>
+        </div>
+
+        <div class="catalog-tools">
+
+            <input
+                id="searchProduct"
+                type="search"
+                placeholder="Cari nama produk..."
+            >
+
+            <select id="categoryFilter">
+                <option value="Semua">Semua Kategori</option>
+                <option value="Makanan">Makanan</option>
+                <option value="Minuman">Minuman</option>
+                <option value="Kebutuhan Rumah Tangga">Kebutuhan Rumah Tangga</option>
+            </select>
+
+        </div>
+
+        <div class="product-grid" id="allProducts"></div>
+
+    </main>
+
+    <footer class="simple-footer">
+        © 2026 Skansaba Store · SMKN 1 Bantul
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>
